@@ -140,6 +140,25 @@ The remainder of the paper is organized as follows: In Section~II, …
 \lipsum[24]
 
 \section{Discussion \textbar{} Evalution}
+This is the discussion with a first sentence and a figure to be included here.
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{D:/Bilder/Camera/2025-01-04_Laufen-Rosenheim/IMG20250104163930}
+	\caption[Sample image]{This is just a sample image with a long description in the label}
+	\label{fig:img_sample1}
+\end{figure}
+
+we also check whether we can properly include SVG graphics as this is one of our mayjor formats that we will use here
+
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg{img/bloom.svg}
+	\caption{svg image this is a sample for an SVG}
+\end{figure}
+
 \lipsum[25]
 
 \section{Conclusion and Future Work}
