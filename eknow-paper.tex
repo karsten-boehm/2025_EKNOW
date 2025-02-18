@@ -34,6 +34,12 @@ final % Always enable microtype, even if in draft mode. This helps finding bad b
 ]{microtype}
 
 
+%
+% packages added by K.Böhm (not included in the template)
+%
+%\usepackage{svg} %does not work under Windows due to the need of external tools
+
+% --- end of own packages included ----
 \begin{filecontents}[overwrite]{embedded.bib}
 @online{ieee2015howto,
     author = {Michael Shell},
@@ -142,7 +148,6 @@ The remainder of the paper is organized as follows: In Section~II, …
 \section{Discussion \textbar{} Evalution}
 This is the discussion with a first sentence and a figure to be included here.
 
-% TODO: \usepackage{graphicx} required
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{D:/Bilder/Camera/2025-01-04_Laufen-Rosenheim/IMG20250104163930}
@@ -155,7 +160,7 @@ we also check whether we can properly include SVG graphics as this is one of our
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg{img/bloom.svg}
+	\includegraphics[width=1.0\linewidth]{img/bloom.pdf}
 	\caption{svg image this is a sample for an SVG}
 \end{figure}
 
